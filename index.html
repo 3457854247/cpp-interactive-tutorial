@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="从 C 结构体到 C++ 类、封装、构造、const、引用，再到链表与滑动窗口滤波的交互式 C++ 教程。">
+  <title>C++ 交互式课堂 · 从类到数据结构</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">C++</span>
+        <div class="brand-text">
+          <strong>交互式课堂</strong>
+          <span>从类到数据结构</span>
+        </div>
+      </div>
+
+      <div class="topbar-center" id="topbar-center" aria-live="polite">
+        <span class="crumb-chapter">第 1 章</span>
+        <span class="crumb-sep">/</span>
+        <span class="crumb-card">没有类的世界</span>
+      </div>
+
+      <div class="topbar-actions">
+        <div class="global-progress" title="全站完成进度">
+          <div class="progress-meta">
+            <span id="global-progress-text">0 / 25</span>
+            <span class="progress-label">已完成</span>
+          </div>
+          <div class="progress-track"><span id="global-progress-bar"></span></div>
+        </div>
+        <button class="icon-text-btn" id="reset-progress" type="button" title="清空本机保存的学习进度">
+          <span class="reset-icon" aria-hidden="true">↺</span>
+          <span>重置进度</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="zones" id="zones" aria-label="C++ 概念可视化">
+      <div class="zone" id="zone-source" data-zone="source">
+        <div class="zone-header">
+          <span class="zone-icon source-icon" aria-hidden="true">&lt;/&gt;</span>
+          <div class="zone-heading">
+            <span class="zone-title">源码</span>
+            <span class="zone-subtitle" id="source-subtitle">motor.cpp</span>
+          </div>
+          <span class="zone-badge" id="source-badge">C++</span>
+        </div>
+        <div class="zone-body" id="source-body">
+          <div class="zone-empty">正在加载课程…</div>
+        </div>
+      </div>
+
+      <div class="zone" id="zone-model" data-zone="model">
+        <div class="zone-header">
+          <span class="zone-icon model-icon" aria-hidden="true">◈</span>
+          <div class="zone-heading">
+            <span class="zone-title">对象模型</span>
+            <span class="zone-subtitle" id="model-subtitle">类与对象</span>
+          </div>
+          <span class="zone-badge" id="model-badge">对象</span>
+        </div>
+        <div class="zone-body" id="model-body">
+          <div class="zone-empty">正在加载课程…</div>
+        </div>
+      </div>
+
+      <div class="zone" id="zone-memory" data-zone="memory">
+        <div class="zone-header">
+          <span class="zone-icon memory-icon" aria-hidden="true">▤</span>
+          <div class="zone-heading">
+            <span class="zone-title">内存视图</span>
+            <span class="zone-subtitle" id="memory-subtitle">示意地址</span>
+          </div>
+          <span class="zone-badge" id="memory-badge">栈</span>
+        </div>
+        <div class="zone-body" id="memory-body">
+          <div class="zone-empty">正在加载课程…</div>
+        </div>
+      </div>
+
+      <div class="zone" id="zone-output" data-zone="output">
+        <div class="zone-header">
+          <span class="zone-icon output-icon" aria-hidden="true">▶</span>
+          <div class="zone-heading">
+            <span class="zone-title">运行输出</span>
+            <span class="zone-subtitle" id="output-subtitle">等待运行</span>
+          </div>
+          <span class="zone-badge live-badge" id="output-badge">REPL</span>
+        </div>
+        <div class="zone-body output-body" id="output-body">
+          <div class="zone-empty">运行一条命令后，这里会显示结果。</div>
+        </div>
+      </div>
+
+      <svg class="arrows-overlay" id="arrows-overlay" aria-hidden="true"></svg>
+    </section>
+
+    <main class="bottom">
+      <section class="tutorial" aria-label="课程内容">
+        <aside class="tutorial-sidebar">
+          <div class="sidebar-head">
+            <div class="sidebar-title">课程目录</div>
+            <div class="sidebar-progress"><span id="sidebar-progress">0 / 25</span></div>
+          </div>
+          <div class="sidebar-chapters" id="sidebar-chapters"></div>
+          <div class="sidebar-foot">
+            <span class="foot-dot"></span>
+            进度自动保存在本机
+          </div>
+        </aside>
+
+        <div class="tutorial-main">
+          <div class="card-nav">
+            <button class="nav-btn" id="btn-prev" type="button" aria-label="上一节">
+              <span aria-hidden="true">←</span> 上一节
+            </button>
+            <select class="mobile-card-select" id="mobile-card-select" aria-label="选择课程章节"></select>
+            <div class="nav-center">
+              <span class="card-progress" id="card-progress">1 / 25</span>
+              <span class="key-hint">Alt + ← / →</span>
+            </div>
+            <button class="nav-btn" id="btn-next" type="button" aria-label="下一节">
+              下一节 <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <article class="card-content" id="card-content" aria-live="polite">
+            <div class="loading-state">
+              <div class="loading-mark">C++</div>
+              <p>正在准备课程…</p>
+            </div>
+          </article>
+
+          <div class="card-task" id="card-task">
+            <div class="task-label" id="task-label">TASK</div>
+            <div class="task-main">
+              <div class="task-prompt" id="task-prompt">正在加载练习…</div>
+              <div class="task-steps" id="task-steps"></div>
+            </div>
+            <button class="task-read-btn" id="task-read-btn" type="button" hidden>标记已读</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab" aria-label="C++ 交互实验台">
+        <div class="lab-header">
+          <div class="terminal-dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="lab-title">
+            <span class="terminal-title">C++ 实验台</span>
+            <span class="lab-mode" id="lab-mode">Motor</span>
+          </div>
+          <span class="sim-badge" title="这是教学模拟器，不会调用真实 C++ 编译器">模拟器</span>
+          <button class="lab-reset" id="lab-reset" type="button" title="重置当前实验台">
+            <span aria-hidden="true">↺</span>
+            <span class="sr-only">重置当前实验台</span>
+          </button>
+        </div>
+
+        <div class="lab-body">
+          <div class="terminal-output" id="terminal-output" aria-live="polite" aria-label="实验台输出"></div>
+          <div class="lab-suggestions" id="lab-suggestions" aria-label="命令建议"></div>
+          <div class="terminal-input-line">
+            <span class="terminal-prompt" aria-hidden="true">$</span>
+            <input type="text" class="terminal-input" id="terminal-input"
+                   placeholder="输入 C++ 语句，回车执行…" autocomplete="off"
+                   spellcheck="false" aria-label="C++ 实验台命令输入">
+            <button class="run-btn" id="run-btn" type="button" title="执行命令">↵</button>
+          </div>
+          <div class="lab-foot">
+            <span>教学模拟 · 状态实时更新</span>
+            <span><kbd>↑</kbd><kbd>↓</kbd> 历史命令</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">本课程需要 JavaScript 才能显示交互内容和实验台。</div>
+  </noscript>
+
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
