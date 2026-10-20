@@ -1088,7 +1088,8 @@
     const hasTask = !!card.task;
 
     els.task.classList.toggle('completed', isDone);
-    els.taskLabel.textContent = isDone ? 'DONE' : (isQuiz ? 'QUIZ' : (hasTask ? 'TASK' : 'READ'));
+    els.task.dataset.mode = isDone ? 'done' : (isQuiz ? 'quiz' : (hasTask ? 'task' : 'read'));
+    els.taskLabel.textContent = isDone ? '✓ DONE' : (isQuiz ? '? QUIZ' : (hasTask ? '✎ TASK' : '▤ READ'));
     els.taskSteps.innerHTML = '';
     els.taskRead.hidden = true;
 

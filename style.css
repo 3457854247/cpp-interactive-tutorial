@@ -172,7 +172,7 @@ a:hover {
   align-items: center;
   gap: 7px;
   min-width: 0;
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--text-muted);
   overflow: hidden;
 }
@@ -370,7 +370,7 @@ a:hover {
 }
 
 .zone-title {
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
   color: var(--text-primary);
@@ -379,7 +379,7 @@ a:hover {
 .zone-subtitle {
   overflow: hidden;
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 9px;
   line-height: 1.25;
   color: var(--text-faint);
   text-overflow: ellipsis;
@@ -621,7 +621,7 @@ a:hover {
   gap: 5px;
   padding: 3px 7px;
   font-family: var(--font-mono);
-  font-size: 10.2px;
+  font-size: 10.8px;
 }
 
 .obj-field + .obj-field {
@@ -1249,7 +1249,7 @@ a:hover {
   padding: 0 1px;
   color: var(--text-secondary);
   font-family: var(--font-mono);
-  font-size: 9.6px;
+  font-size: 10px;
   line-height: 1.7;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
@@ -1321,7 +1321,7 @@ a:hover {
 }
 
 .sidebar-title {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.3px;
   color: var(--text-secondary);
@@ -1329,7 +1329,7 @@ a:hover {
 
 .sidebar-progress {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 8.5px;
   color: var(--text-faint);
 }
 
@@ -1356,7 +1356,7 @@ a:hover {
   border: 0;
   background: transparent;
   color: var(--text-muted);
-  font-size: 10px;
+  font-size: 10.8px;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
@@ -1375,13 +1375,13 @@ a:hover {
 .chapter-number {
   display: grid;
   place-items: center;
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: 4px;
   font-family: var(--font-mono);
-  font-size: 7.5px;
+  font-size: 8.5px;
   color: var(--text-faint);
 }
 
@@ -1401,7 +1401,7 @@ a:hover {
 .chapter-count {
   margin-left: auto;
   font-family: var(--font-mono);
-  font-size: 7px;
+  font-size: 8px;
   color: var(--text-faint);
 }
 
@@ -1428,15 +1428,15 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   width: 100%;
-  padding: 5px 7px 5px 8px;
+  padding: 6px 7px 6px 8px;
   border: 0;
   border-left: 2px solid transparent;
   border-radius: 4px;
   background: transparent;
   color: var(--text-muted);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-align: left;
   cursor: pointer;
   transition: color var(--transition), background var(--transition), border-color var(--transition);
@@ -1464,19 +1464,20 @@ a:hover {
 .card-check {
   display: grid;
   place-items: center;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: 50%;
   color: transparent;
-  font-size: 7px;
+  font-size: 8px;
   line-height: 1;
 }
 
 .card-item.completed .card-check {
   border-color: rgba(63, 185, 80, 0.5);
   background: var(--green-soft);
+  box-shadow: 0 0 7px rgba(63, 185, 80, 0.2);
   color: var(--green);
 }
 
@@ -1533,12 +1534,12 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 9px;
+  padding: 4px 10px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: transparent;
   color: var(--text-muted);
-  font-size: 9.5px;
+  font-size: 10.2px;
   cursor: pointer;
   transition: color var(--transition), border-color var(--transition), background var(--transition);
 }
@@ -1580,12 +1581,12 @@ a:hover {
 
 .card-progress {
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 9.5px;
   color: var(--text-muted);
 }
 
 .key-hint {
-  font-size: 7px;
+  font-size: 8px;
   color: var(--text-faint);
   letter-spacing: 0.2px;
 }
@@ -1595,9 +1596,9 @@ a:hover {
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 18px 24px 26px;
-  line-height: 1.75;
-  font-size: 12.5px;
+  padding: 19px 25px 28px;
+  line-height: 1.8;
+  font-size: 13.5px;
   scroll-behavior: smooth;
 }
 
@@ -1639,7 +1640,7 @@ a:hover {
   gap: 6px;
   margin-bottom: 6px;
   color: var(--accent);
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -1653,21 +1654,21 @@ a:hover {
 }
 
 .card-title {
-  margin: 0 0 7px;
+  margin: 0 0 8px;
   color: var(--text-primary);
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 650;
   line-height: 1.35;
   letter-spacing: -0.3px;
 }
 
 .card-lead {
-  margin: 0 0 16px;
-  padding-bottom: 13px;
+  margin: 0 0 17px;
+  padding-bottom: 14px;
   border-bottom: 1px solid var(--border-soft);
   color: var(--text-muted);
-  font-size: 11.5px;
-  line-height: 1.75;
+  font-size: 12.5px;
+  line-height: 1.8;
 }
 
 .card-meta {
@@ -1678,12 +1679,12 @@ a:hover {
 }
 
 .meta-chip {
-  padding: 2px 7px;
+  padding: 2px 8px;
   border: 1px solid var(--border-soft);
   border-radius: 999px;
   background: rgba(28, 33, 40, 0.55);
   color: var(--text-faint);
-  font-size: 7.5px;
+  font-size: 8.5px;
   letter-spacing: 0.2px;
 }
 
@@ -1694,9 +1695,9 @@ a:hover {
 }
 
 .card-content h2 {
-  margin: 22px 0 8px;
+  margin: 23px 0 9px;
   color: var(--text-primary);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 630;
   line-height: 1.45;
 }
@@ -1706,9 +1707,9 @@ a:hover {
 }
 
 .card-content h3 {
-  margin: 18px 0 6px;
+  margin: 19px 0 7px;
   color: var(--text-primary);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -1852,11 +1853,11 @@ a:hover {
 
 .code-block pre {
   margin: 0;
-  padding: 11px 13px 13px;
+  padding: 12px 14px 14px;
   overflow-x: auto;
   font-family: var(--font-mono);
-  font-size: 10.5px;
-  line-height: 1.68;
+  font-size: 11px;
+  line-height: 1.7;
   tab-size: 2;
 }
 
@@ -1940,7 +1941,7 @@ a:hover {
   gap: 5px;
   margin-bottom: 3px;
   color: var(--accent);
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 650;
   letter-spacing: 0.45px;
   text-transform: uppercase;
@@ -1948,8 +1949,8 @@ a:hover {
 
 .callout-body {
   color: var(--text-secondary);
-  font-size: 10.5px;
-  line-height: 1.72;
+  font-size: 11.5px;
+  line-height: 1.75;
 }
 
 .callout-body > :last-child {
@@ -2000,16 +2001,16 @@ a:hover {
 .card-content table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 9.5px;
-  line-height: 1.55;
+  font-size: 10.5px;
+  line-height: 1.6;
 }
 
 .card-content th {
-  padding: 7px 9px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--border);
   background: rgba(28, 33, 40, 0.72);
   color: var(--text-muted);
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.2px;
   text-align: left;
@@ -2017,7 +2018,7 @@ a:hover {
 }
 
 .card-content td {
-  padding: 6px 9px;
+  padding: 7px 10px;
   border-bottom: 1px solid var(--border-soft);
   color: var(--text-secondary);
   vertical-align: top;
@@ -2042,13 +2043,13 @@ a:hover {
 
 .steps li {
   position: relative;
-  margin: 0 0 7px;
-  padding: 7px 9px 7px 34px;
+  margin: 0 0 8px;
+  padding: 8px 10px 8px 36px;
   border: 1px solid var(--border-soft);
   border-radius: 6px;
   background: rgba(28, 33, 40, 0.32);
   color: var(--text-secondary);
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.65;
 }
 
@@ -2141,9 +2142,9 @@ a:hover {
 }
 
 .quiz-question {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   color: var(--text-primary);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.65;
 }
@@ -2163,13 +2164,13 @@ a:hover {
   align-items: flex-start;
   gap: 8px;
   width: 100%;
-  padding: 7px 8px;
+  padding: 8px 9px;
   border: 1px solid var(--border-soft);
   border-radius: 6px;
   background: rgba(13, 17, 23, 0.4);
   color: var(--text-secondary);
-  font-size: 9.5px;
-  line-height: 1.55;
+  font-size: 10.5px;
+  line-height: 1.6;
   text-align: left;
   cursor: pointer;
   transition: border-color var(--transition), background var(--transition), color var(--transition);
@@ -2253,40 +2254,71 @@ a:hover {
 .card-task {
   display: flex;
   align-items: center;
-  gap: 10px;
-  min-height: 54px;
-  padding: 8px 14px;
+  gap: 11px;
+  min-height: 60px;
+  padding: 9px 14px;
   border-top: 1px solid var(--border);
+  border-left: 2px solid transparent;
   background: rgba(13, 17, 23, 0.3);
   flex-shrink: 0;
   transition: background var(--transition), border-color var(--transition);
 }
 
+.card-task[data-mode="task"] {
+  border-left-color: rgba(88, 166, 255, 0.55);
+  background: linear-gradient(90deg, rgba(88, 166, 255, 0.045), rgba(13, 17, 23, 0.3) 34%);
+}
+
+.card-task[data-mode="quiz"] {
+  border-left-color: rgba(188, 140, 255, 0.5);
+}
+
+.card-task[data-mode="read"] {
+  border-left-color: rgba(210, 153, 34, 0.5);
+}
+
 .card-task.completed {
   border-top-color: rgba(63, 185, 80, 0.35);
-  background: rgba(63, 185, 80, 0.045);
+  border-left-color: var(--green);
+  background: rgba(63, 185, 80, 0.06);
 }
 
 .task-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 37px;
-  padding: 3px 6px;
-  border: 1px solid rgba(88, 166, 255, 0.22);
-  border-radius: 4px;
-  background: var(--accent-soft);
-  color: var(--accent);
+  min-width: 62px;
+  padding: 5px 9px;
+  border: 1px solid rgba(88, 166, 255, 0.5);
+  border-radius: 6px;
+  background: rgba(88, 166, 255, 0.13);
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.06);
+  color: #79c0ff;
   font-family: var(--font-mono);
-  font-size: 7px;
-  font-weight: 600;
-  letter-spacing: 0.7px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   flex-shrink: 0;
 }
 
+.card-task[data-mode="quiz"] .task-label {
+  border-color: rgba(188, 140, 255, 0.5);
+  background: rgba(188, 140, 255, 0.13);
+  box-shadow: 0 0 0 3px rgba(188, 140, 255, 0.06);
+  color: var(--purple);
+}
+
+.card-task[data-mode="read"] .task-label {
+  border-color: rgba(210, 153, 34, 0.5);
+  background: rgba(210, 153, 34, 0.12);
+  box-shadow: 0 0 0 3px rgba(210, 153, 34, 0.05);
+  color: var(--yellow);
+}
+
 .card-task.completed .task-label {
-  border-color: rgba(63, 185, 80, 0.28);
-  background: var(--green-soft);
+  border-color: rgba(63, 185, 80, 0.55);
+  background: rgba(63, 185, 80, 0.14);
+  box-shadow: 0 0 0 3px rgba(63, 185, 80, 0.07);
   color: var(--green);
 }
 
@@ -2296,18 +2328,18 @@ a:hover {
 }
 
 .task-prompt {
-  color: var(--text-muted);
-  font-size: 9.5px;
-  line-height: 1.55;
+  color: var(--text-secondary);
+  font-size: 10.5px;
+  line-height: 1.6;
 }
 
 .task-prompt code {
-  padding: 1px 4px;
+  padding: 1px 5px;
   border-radius: 3px;
   background: var(--bg-tertiary);
   color: var(--green);
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 9.5px;
   white-space: nowrap;
 }
 
@@ -2325,12 +2357,12 @@ a:hover {
 .step-chip {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  padding: 1px 5px;
+  gap: 4px;
+  padding: 2px 6px;
   border: 1px solid var(--border-soft);
-  border-radius: 3px;
+  border-radius: 4px;
   color: var(--text-faint);
-  font-size: 7.5px;
+  font-size: 8.5px;
 }
 
 .step-chip .step-num {
@@ -2349,12 +2381,13 @@ a:hover {
 }
 
 .task-read-btn {
-  padding: 4px 9px;
-  border: 1px solid rgba(88, 166, 255, 0.3);
-  border-radius: 4px;
-  background: var(--accent-soft);
+  padding: 5px 11px;
+  border: 1px solid rgba(88, 166, 255, 0.45);
+  border-radius: 5px;
+  background: rgba(88, 166, 255, 0.12);
   color: var(--accent);
-  font-size: 8.5px;
+  font-size: 9.5px;
+  font-weight: 500;
   cursor: pointer;
   flex-shrink: 0;
   transition: all var(--transition);
@@ -2370,7 +2403,8 @@ a:hover {
   align-items: center;
   gap: 4px;
   color: var(--green);
-  font-size: 8.5px;
+  font-size: 9.5px;
+  font-weight: 500;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -2493,7 +2527,7 @@ a:hover {
     linear-gradient(180deg, rgba(9, 12, 17, 0.2), transparent 40%),
     transparent;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 11px;
   line-height: 1.68;
 }
 
@@ -2542,13 +2576,13 @@ a:hover {
 
 .suggest-chip {
   flex-shrink: 0;
-  padding: 3px 7px;
+  padding: 3px 8px;
   border: 1px solid var(--border-soft);
   border-radius: 4px;
   background: rgba(28, 33, 40, 0.55);
   color: var(--text-muted);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 8.5px;
   cursor: pointer;
   transition: all var(--transition);
 }
@@ -2585,7 +2619,7 @@ a:hover {
   color: var(--text-primary);
   caret-color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 10.4px;
+  font-size: 10.8px;
 }
 
 .terminal-input::placeholder {
@@ -2734,6 +2768,12 @@ a:hover {
   }
 }
 
+@media (min-width: 721px) and (max-width: 1320px) {
+  .src-lines {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 980px) {
   body {
     height: auto;
@@ -2823,8 +2863,8 @@ a:hover {
 
   .zone {
     flex: 0 0 84%;
-    min-height: 216px;
-    max-height: 252px;
+    min-height: 232px;
+    max-height: 268px;
     scroll-snap-align: start;
   }
 
@@ -2875,7 +2915,7 @@ a:hover {
   }
 
   .task-read-btn {
-    margin-left: 47px;
+    margin-left: 73px;
   }
 
   .lab {
